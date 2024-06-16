@@ -31,6 +31,7 @@ app.get("/", async (req, res) => {
 app.use("/auth", require("./routes/auth"));
 app.use("/goods_types", require("./routes/goods.type.route"));
 app.use("/goods", require("./routes/goods"));
+app.use("/requests", require("./routes/requests"));
 
 //not found handler
 app.use((req, res, next) => {
