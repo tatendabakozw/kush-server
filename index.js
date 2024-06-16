@@ -29,6 +29,8 @@ app.get("/", async (req, res) => {
 // user defined routes
 // all user defined routes go here
 app.use("/auth", require("./routes/auth"));
+app.use("/goods_types", require("./routes/goods.type.route"));
+app.use("/goods", require("./routes/goods"));
 
 //not found handler
 app.use((req, res, next) => {
